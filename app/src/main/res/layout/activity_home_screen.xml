@@ -17,29 +17,29 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/item1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toBottomOf="@+id/textViewInput"
-        app:layout_constraintVertical_bias="0.787" />
+        app:layout_constraintVertical_bias="0.407" />
 
     <LinearLayout
         android:id="@+id/item1"
-        android:layout_width="316dp"
-        android:layout_height="275dp"
+        android:layout_width="346dp"
+        android:layout_height="328dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.712">
+        app:layout_constraintVertical_bias="0.781">
 
 
         <LinearLayout
             android:layout_width="103dp"
             android:layout_height="186dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
             android:background="#D4DEFF"
             android:orientation="vertical"
             android:padding="30dp">
@@ -60,7 +60,8 @@
                 android:layout_height="37dp"
                 android:fontFamily="sans-serif-black"
                 android:text="Mail"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/mailNumber"
@@ -69,6 +70,7 @@
                 android:fontFamily="sans-serif-black"
                 android:text="6"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="23dp" />
 
         </LinearLayout>
@@ -76,7 +78,7 @@
         <LinearLayout
             android:layout_width="103dp"
             android:layout_height="186dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="10dp"
             android:background="#4D6FDB"
             android:orientation="vertical"
             android:padding="30dp">
@@ -97,7 +99,8 @@
                 android:layout_height="37dp"
                 android:fontFamily="sans-serif-black"
                 android:text="Task"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/taskNumber"
@@ -106,6 +109,7 @@
                 android:fontFamily="sans-serif-black"
                 android:text="15"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="23dp" />
 
         </LinearLayout>
@@ -134,7 +138,8 @@
                 android:layout_height="37dp"
                 android:fontFamily="sans-serif-black"
                 android:text="User"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/userNumber"
@@ -143,22 +148,23 @@
                 android:fontFamily="sans-serif-black"
                 android:text="0"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="23dp" />
         </LinearLayout>
     </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="180dp"
-        android:layout_height="181dp"
+        android:layout_width="171dp"
+        android:layout_height="171dp"
         android:layout_marginBottom="181dp"
 
         app:layout_constraintBottom_toTopOf="@+id/item1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.2"
         app:srcCompat="@drawable/stilogo2" />
 
     <Button
@@ -170,25 +176,28 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.077" />
 
     <TextView
         android:id="@+id/textViewInput"
-        android:layout_width="301dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="84dp"
+        android:layout_width="313dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="52dp"
         android:fontFamily="sans-serif-condensed"
         android:text="Welcome [Name]"
+        android:textAlignment="gravity"
         android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textFontWeight="1000"
+        android:textSize="28dp"
         app:layout_constraintBottom_toTopOf="@+id/item1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintHorizontal_bias="0.339"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
