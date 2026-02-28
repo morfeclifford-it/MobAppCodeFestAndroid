@@ -3,35 +3,28 @@ package com.example.mobappcodefest
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
-    lateinit var Login: Button
-    lateinit var InputText: EditText
+class HomeScreen : AppCompatActivity() {
+    lateinit var welcomeUsername : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home_screen)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        Login = findViewById(R.id.LoginButton)
-        InputText = findViewById(R.id.EmailAddress)
+        welcomeUsername = findViewById(R.id.textViewInput)
 
-        Login.setOnClickListener {
-            val name = InputText.text.toString().trim()
-            val intent = Intent(this, HomeScreen::class.java)
-
-            intent.putExtra("username", name)
-            startActivity(intent)
-        }
+        val name = intent.getStringExtra("username")
+        welcomeUsername.text = "Welcome, ${name ?: "Name"}"
     }
 }

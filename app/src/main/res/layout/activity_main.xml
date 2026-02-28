@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/Login"
+        android:id="@+id/LoginButton"
         android:layout_width="181dp"
         android:layout_height="67dp"
         android:backgroundTint="@color/white"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.789" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/EmailAddress"
         android:layout_width="258dp"
         android:layout_height="81dp"
         android:alpha="0.7"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.46" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/Password"
         android:layout_width="258dp"
         android:layout_height="81dp"
         android:alpha="0.7"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165"
+        app:layout_constraintVertical_bias="0.12"
         app:srcCompat="@drawable/stilogo2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
